@@ -138,6 +138,29 @@
       margin-left: 1em;
     }
 
+    
+    /* slider */
+    .gallery {
+      background: #EEE;
+    }
+
+    .gallery-cell {
+      width: 66%;
+      height: 200px;
+      margin-right: 10px;
+      background: #8C8;
+      counter-increment: gallery-cell;
+    }
+
+    /* cell number */
+    .gallery-cell:before {
+      display: block;
+      text-align: center;
+      content: counter(gallery-cell);
+      line-height: 200px;
+      font-size: 80px;
+      color: white;
+    }
 
   </style>
 
@@ -265,7 +288,7 @@
     </h1>
 
     <!-- div video -->
-    <div class="ui centered card">
+    <div class="ui centered">
       <div class="embed-responsive embed-responsive-16by9">
         <iframe class="embed-responsive-item" src="//www.youtube.com/embed/iq6b_A94NrA"></iframe>
 
